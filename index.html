@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argenliga</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#016B5B;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        header h1{
+            font-size:45px;
+        }
+
+        header p{
+            margin-top:10px;
+            font-size:20px;
+        }
+
+        nav{
+            background:#02473D;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            padding:18px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            background:white;
+            color:#02473D;
+        }
+
+        .contenedor{
+            width:90%;
+            max-width:1200px;
+            margin:40px auto;
+        }
+
+        .titulo{
+            text-align:center;
+            margin-bottom:25px;
+            color:#02473D;
+        }
+
+        .tarjetas{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .tarjeta{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            text-align:center;
+            box-shadow:0 0 10px rgba(0,0,0,.15);
+            transition:.3s;
+        }
+
+        .tarjeta:hover{
+            transform:translateY(-8px);
+        }
+
+        .tarjeta h2{
+            color:#016B5B;
+            margin-bottom:15px;
+        }
+
+        footer{
+            margin-top:50px;
+            background:#02473D;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+
+<h1>ARGENLIGA</h1>
+
+<p>Temporada 2026</p>
+
+</header>
+
+<nav>
+
+<a href="#">Inicio</a>
+
+<a href="#">División A</a>
+
+<a href="#">División B</a>
+
+<a href="#">Fixture</a>
+
+<a href="#">Tablas</a>
+
+<a href="#">Noticias</a>
+
+</nav>
+
+<div class="contenedor">
+
+<h2 class="titulo">Bienvenido al sitio oficial de Argenliga</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+<h2>🏆 División A</h2>
+<p>Zona A y Zona B</p>
+</div>
+
+<div class="tarjeta">
+<h2>⚽ División B</h2>
+<p>Zona A y Zona B</p>
+</div>
+
+<div class="tarjeta">
+<h2>📅 Fixture</h2>
+<p>Todas las fechas</p>
+</div>
+
+<div class="tarjeta">
+<h2>📊 Tablas</h2>
+<p>Las siete categorías</p>
+</div>
+
+<div class="tarjeta">
+<h2>📰 Noticias</h2>
+<p>Información del torneo</p>
+</div>
+
+<div class="tarjeta">
+<h2>📷 Galería</h2>
+<p>Fotos y videos</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Argenliga
+
+</footer>
+
+</body>
+</html>
+
+
+Primera versión de la página de inicio
