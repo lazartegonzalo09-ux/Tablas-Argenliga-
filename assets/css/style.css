@@ -203,26 +203,18 @@ header p{
 
 @media(max-width:800px){
 
-
 .sidebar{
 
-    position:relative;
-    width:100%;
-    min-height:auto;
-
-}
-
-
-.layout{
-
-    display:block;
+    position:fixed;
+    width:280px;
+    height:100vh;
 
 }
 
 
 .content{
 
-    margin-left:0;
+    margin-left:280px;
     padding:15px;
 
 }
@@ -236,4 +228,3 @@ header h1{
 
 
 }
-Diseño principal Argenliga
