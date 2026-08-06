@@ -5,91 +5,234 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 body{
-    background:#f4f4f4;
+    background:#f2f4f3;
+    color:#222;
 }
 
-header{
-    background:#016B5B;
+
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+
+/* MENU LATERAL */
+
+.sidebar{
+    width:280px;
+    background:#014f43;
     color:white;
+    min-height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+
+.logo{
     text-align:center;
-    padding:30px;
+    padding:30px 15px;
+    background:#013a32;
 }
 
-header h1{
-    font-size:45px;
+
+.logo h1{
+    font-size:32px;
 }
 
-header p{
-    margin-top:10px;
-    font-size:20px;
+
+.logo p{
+    margin-top:8px;
 }
+
+
+
+/* NAVEGACION */
 
 nav{
-    background:#02473D;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    padding:15px;
 }
 
-nav a{
+
+nav a,
+.dropdown-btn{
+
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding:15px;
+    margin-bottom:5px;
+
     color:white;
     text-decoration:none;
-    padding:18px;
-    font-weight:bold;
+
+    background:none;
+    border:none;
+
+    cursor:pointer;
+
+    font-size:16px;
+    text-align:left;
 }
 
-nav a:hover{
-    background:white;
-    color:#02473D;
+
+nav a:hover,
+.dropdown-btn:hover{
+
+    background:#016b5b;
+    border-radius:8px;
+
 }
 
-.contenedor{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
+
+
+/* SUBMENU */
+
+
+.submenu{
+
+    display:none;
+    margin-left:15px;
 }
 
-.titulo{
-    text-align:center;
-    margin-bottom:25px;
-    color:#02473D;
+
+.submenu a{
+
+    font-size:14px;
+    padding:10px;
+
 }
 
-.tarjetas{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
 
-.tarjeta{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-    transition:.3s;
-}
+.menu-item.active > .submenu{
 
-.tarjeta:hover{
-    transform:translateY(-8px);
-}
-
-.tarjeta h2{
-    color:#016B5B;
-    margin-bottom:15px;
-}
-
-.tarjeta a{
-    text-decoration:none;
-    color:inherit;
     display:block;
 }
 
-footer{
-    margin-top:50px;
-    background:#02473D;
-    color:white;
+
+
+/* CONTENIDO */
+
+
+.content{
+
+    margin-left:280px;
+    padding:30px;
+    width:100%;
+
+}
+
+
+header{
+
+    background:white;
+    padding:35px;
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
     text-align:center;
-    padding:20px;
+
+}
+
+
+header h1{
+
+    color:#014f43;
+    font-size:38px;
+
+}
+
+
+header p{
+
+    margin-top:10px;
+
+}
+
+
+
+
+/* TARJETAS */
+
+
+.cards{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+.card h2{
+
+    color:#016b5b;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* CELULAR */
+
+
+@media(max-width:800px){
+
+
+.sidebar{
+
+    position:relative;
+    width:100%;
+    min-height:auto;
+
+}
+
+
+.layout{
+
+    display:block;
+
+}
+
+
+.content{
+
+    margin-left:0;
+    padding:15px;
+
+}
+
+
+header h1{
+
+    font-size:28px;
+
+}
+
+
 }
