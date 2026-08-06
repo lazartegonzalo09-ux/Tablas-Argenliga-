@@ -1,103 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Argenliga</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-  </head>
-<script src="assets/js/app.js"></script>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Argenliga</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
 <body>
 
-<header>
+
+<div class="layout">
+
+
+<!-- MENU LATERAL -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
 
 <h1>ARGENLIGA</h1>
 
 <p>Temporada 2026</p>
 
-</header>
+</div>
+
 
 <nav>
 
-<a href="index.html">Inicio</a>
 
-<a href="divisiones/division-a.html">División A</a>
+<a href="index.html">
+🏠 Inicio
+</a>
 
-<a href="divisiones/division-b.html">División B</a>
 
-<a href="#">Fixture</a>
 
-<a href="#">Tablas</a>
+<div class="menu-item">
 
-<a href="#">Noticias</a>
+<button class="dropdown-btn">
+🏆 División A
+<span>▼</span>
+</button>
+
+
+<div class="submenu">
+
+
+<button class="dropdown-btn">
+Zona A
+<span>▼</span>
+</button>
+
+
+<div class="submenu">
+
+<a href="#">Primera</a>
+<a href="#">Tercera</a>
+<a href="#">Cuarta</a>
+<a href="#">Quinta</a>
+<a href="#">Sexta</a>
+<a href="#">Séptima</a>
+<a href="#">Octava</a>
+
+</div>
+
+
+
+<button class="dropdown-btn">
+Zona B
+<span>▼</span>
+</button>
+
+
+<div class="submenu">
+
+<a href="#">Primera</a>
+<a href="#">Tercera</a>
+<a href="#">Cuarta</a>
+<a href="#">Quinta</a>
+<a href="#">Sexta</a>
+<a href="#">Séptima</a>
+<a href="#">Octava</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="menu-item">
+
+<button class="dropdown-btn">
+🏆 División B
+<span>▼</span>
+</button>
+
+
+<div class="submenu">
+
+
+<button class="dropdown-btn">
+Zona A
+<span>▼</span>
+</button>
+
+
+<div class="submenu">
+
+<a href="#">Primera</a>
+<a href="#">Tercera</a>
+<a href="#">Cuarta</a>
+<a href="#">Quinta</a>
+<a href="#">Sexta</a>
+<a href="#">Séptima</a>
+<a href="#">Octava</a>
+
+</div>
+
+
+
+<button class="dropdown-btn">
+Zona B
+<span>▼</span>
+</button>
+
+
+<div class="submenu">
+
+<a href="#">Primera</a>
+<a href="#">Tercera</a>
+<a href="#">Cuarta</a>
+<a href="#">Quinta</a>
+<a href="#">Sexta</a>
+<a href="#">Séptima</a>
+<a href="#">Octava</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<a href="#">
+📅 Fixture
+</a>
+
+
+<a href="#">
+📊 Tablas
+</a>
+
+
+<a href="#">
+⚽ Resultados
+</a>
+
+
+<a href="#">
+📰 Noticias
+</a>
+
+
+<a href="#">
+🏟️ Clubes
+</a>
+
+
 
 </nav>
 
-<div class="contenedor">
 
-<h2 class="titulo">Bienvenido al sitio oficial de Argenliga</h2>
+</aside>
 
-<div class="tarjetas">
 
-<div class="tarjeta">
 
-<a href="divisiones/division-a.html">
+
+
+<!-- CONTENIDO -->
+
+
+<main class="content">
+
+
+<header>
+
+<h1>
+Bienvenidos a Argenliga
+</h1>
+
+
+<p>
+Toda la información del torneo en un solo lugar
+</p>
+
+</header>
+
+
+
+<section class="cards">
+
+
+<div class="card">
 
 <h2>🏆 División A</h2>
 
-<p>Zona A y Zona B</p>
+<p>
+2 zonas - 32 clubes
+</p>
 
-</a>
+</div>
+
+
+
+<div class="card">
+
+<h2>🏆 División B</h2>
+
+<p>
+2 zonas - 36 clubes
+</p>
 
 </div>
 
 
-<div class="tarjeta">
 
-<a href="divisiones/division-b.html">
 
-<h2>⚽ División B</h2>
+<div class="card">
 
-<p>Zona A y Zona B</p>
-
-</a>
-
-</div>
-
-<div class="tarjeta">
-<h2>📅 Fixture</h2>
-<p>Todas las fechas</p>
-</div>
-
-<div class="tarjeta">
 <h2>📊 Tablas</h2>
-<p>Las siete categorías</p>
-</div>
 
-<div class="tarjeta">
-<h2>📰 Noticias</h2>
-<p>Información del torneo</p>
-</div>
-
-<div class="tarjeta">
-<h2>📷 Galería</h2>
-<p>Fotos y videos</p>
-</div>
+<p>
+Posiciones actualizadas
+</p>
 
 </div>
 
+
+
+<div class="card">
+
+<h2>📅 Fixture</h2>
+
+<p>
+Todas las fechas
+</p>
+
 </div>
 
-<footer>
 
-© 2026 Argenliga
+</section>
 
-</footer>
+
+
+</main>
+
+
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
 
 </body>
+
 </html>
-
-
-Primera versión de la página de inicio
+Nueva estructura web Argenliga
