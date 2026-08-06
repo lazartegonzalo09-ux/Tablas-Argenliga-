@@ -1,13 +1,25 @@
 const botones = document.querySelectorAll(".dropdown-btn");
 
-
 botones.forEach(boton => {
 
-    boton.addEventListener("click", () => {
+    boton.addEventListener("click", function(){
 
-        boton.parentElement.classList.toggle("active");
+        const submenu = this.nextElementSibling;
+
+        if(submenu){
+
+            if(submenu.style.display === "block"){
+
+                submenu.style.display = "none";
+
+            }else{
+
+                submenu.style.display = "block";
+
+            }
+
+        }
 
     });
 
 });
-Activar menú desplegable
