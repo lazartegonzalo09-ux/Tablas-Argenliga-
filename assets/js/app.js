@@ -1,25 +1,32 @@
-const botones = document.querySelectorAll(".dropdown-btn");
+document.addEventListener("DOMContentLoaded", function(){
 
-botones.forEach(boton => {
+    const botones = document.querySelectorAll(".dropdown-btn");
 
-    boton.addEventListener("click", function(){
 
-        const submenu = this.nextElementSibling;
+    botones.forEach(function(boton){
 
-        if(submenu){
+        boton.addEventListener("click", function(){
 
-            if(submenu.style.display === "block"){
+            const submenu = this.nextElementSibling;
 
-                submenu.style.display = "none";
 
-            }else{
+            if(submenu){
 
-                submenu.style.display = "block";
+                if(submenu.style.display === "block"){
+
+                    submenu.style.display = "none";
+
+                } else {
+
+                    submenu.style.display = "block";
+
+                }
 
             }
 
-        }
+        });
 
     });
+
 
 });
